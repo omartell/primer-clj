@@ -6,7 +6,7 @@
 (defn table [& strings]
   (string/join (map #(str %1 "\n") strings)))
 
-(deftest generating-primes-multiplication-table-for-prime-numbers
+(deftest generating-primes-multiplication-table-for-n-prime-numbers
   (is (= (table "N   |   2   3   5   7   11  13  17  19  23  29 "
                 "-----------------------------------------------"
                 "2   |   4   6   10  14  22  26  34  38  46  58 "
